@@ -11,9 +11,28 @@ import {
 } from '@/content/portfolio'
 
 export const metadata: Metadata = {
-  title: 'CEO Marcus Fiuza | MF Desenvolvimento',
+  title: 'Sobre Marcus Fiuza — CEO da MF Desenvolvimento',
   description:
-    'Perfil profissional de Marcus Fiuza, CEO e Founder da MF Desenvolvimento, desenvolvedor full stack especializado em Vue.js, Node.js e sistemas SaaS.',
+    'Perfil profissional de Marcus Fiuza: CEO e Founder da MF Desenvolvimento, desenvolvedor full stack sênior com +3 anos em Vue.js, Node.js, Next.js, TypeScript, SaaS e infraestrutura. Belo Horizonte, MG.',
+  alternates: {
+    canonical: '/sobre',
+  },
+  openGraph: {
+    type: 'profile',
+    locale: 'pt_BR',
+    url: 'https://mfdesenvolvimento.online/sobre',
+    title: 'Sobre Marcus Fiuza — CEO da MF Desenvolvimento',
+    description:
+      'CEO e Founder da MF Desenvolvimento. Desenvolvedor full stack sênior especializado em Vue.js, Node.js, Next.js, TypeScript e SaaS. Belo Horizonte, MG.',
+    siteName: 'MF Desenvolvimento',
+    images: [{ url: '/sobre/opengraph-image', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Sobre Marcus Fiuza — CEO da MF Desenvolvimento',
+    description:
+      'CEO e Founder da MF Desenvolvimento. Full stack sênior: Vue.js, Node.js, Next.js, SaaS.',
+  },
 }
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
@@ -50,11 +69,23 @@ const ARCHITECTURE_SIGNALS = [
   'Backups e operação assistida',
 ]
 
-export default function CEOPage() {
+export default function SobrePage() {
   const { contact } = PORTFOLIO_PROFILE
+
+  const profileJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'ProfilePage',
+    mainEntity: { '@id': 'https://mfdesenvolvimento.online/#person' },
+    url: 'https://mfdesenvolvimento.online/sobre',
+    name: 'Sobre Marcus Fiuza',
+  }
 
   return (
     <main className="ceo-page relative min-h-screen overflow-hidden bg-background text-foreground">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(profileJsonLd) }}
+      />
       <CEOHeader />
       <div className="hero-noise" aria-hidden="true" />
       <div className="hero-radial" aria-hidden="true" />
