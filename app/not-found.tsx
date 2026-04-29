@@ -1,5 +1,14 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { MFLogo } from '@/components/brand/mf-logo'
+
+export const metadata: Metadata = {
+  title: '404 — Página não encontrada',
+  robots: {
+    index: false,
+    follow: false,
+  },
+}
 
 export default function NotFound() {
   return (
