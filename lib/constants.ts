@@ -8,7 +8,7 @@ export const SITE = {
   whatsapp: 'https://wa.me/5531972379038',
   github: 'https://github.com/devfiuza',
   linkedin: 'https://linkedin.com/in/devfiuza',
-  url: 'https://mfdev.com.br',
+  url: 'https://mfdesenvolvimento.online',
   phone: '+5531972379038',
   phoneDisplay: '+55 (31) 97237-9038',
   description:
