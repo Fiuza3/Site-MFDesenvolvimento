@@ -1,0 +1,41 @@
+---
+title: "Quanto custa desenvolver um SaaS sob medida em 2026?"
+description: "Análise real dos custos de desenvolvimento de SaaS: MVP, billing, multi-tenant e infraestrutura. Sem jargão, sem ilusão."
+date: "2026-03-15"
+---
+
+Essa é a pergunta que mais recebo de founders antes de iniciar um projeto. A resposta honesta é: depende — mas não de forma vaga. Depende de escopo definido, stack escolhida e nível de senioridade do desenvolvedor.
+
+## O que compõe o custo de um SaaS
+
+Um SaaS funcional tem pelo menos quatro camadas de complexidade:
+
+**1. Autenticação e controle de acesso multi-tenant**
+Não é só login. É isolamento de dados entre clientes, roles e permissões por organização, e um modelo de dados que não vire um problema quando o cliente número 500 entrar na plataforma.
+
+**2. Billing integrado**
+Stripe ou Asaas com planos, trials, upgrades, downgrades e pro-rata. Webhooks de evento de pagamento que não percam mensagens. Portal do cliente para gerenciar assinatura sem contato com suporte.
+
+**3. A aplicação em si**
+O que o produto realmente faz — dashboards, fluxos de trabalho, relatórios, integrações com terceiros. Essa é a parte que varia mais entre projetos.
+
+**4. Infraestrutura e deploy**
+VPS Linux, Docker, Nginx, CI/CD, backups automáticos, monitoramento, alertas. Um SaaS que só roda no localhost não é um SaaS.
+
+## Faixas de custo reais (2026)
+
+Para contratar um desenvolvedor PJ sênior freelancer:
+
+- **MVP básico (autenticação + 2 fluxos principais + billing simples):** 6 a 10 semanas. Custo entre R$ 18.000 e R$ 35.000.
+- **SaaS completo (multi-tenant + billing avançado + painel admin + API pública):** 3 a 5 meses. Custo entre R$ 50.000 e R$ 120.000.
+- **Infraestrutura mensal:** VPS adequado a um SaaS pequeno custa entre R$ 200 e R$ 600/mês.
+
+## O que não está incluído nesses números
+
+Design de UI/UX profissional, produção de conteúdo de marketing, SEO, suporte pós-lançamento, e funcionalidades que aparecem no meio do projeto. Escopo definido no início é a melhor forma de controlar custo.
+
+## A pergunta mais importante
+
+Antes de quanto custa, a pergunta que importa é: qual é o fluxo crítico que precisa funcionar no MVP? Um SaaS com 2 fluxos bem feitos que gera receita é mais valioso do que um com 10 funcionalidades incompletas.
+
+É exatamente isso que o processo de diagnóstico define antes de uma linha de código ser escrita.

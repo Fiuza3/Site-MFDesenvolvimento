@@ -1,0 +1,42 @@
+---
+title: "Vue.js ou React: qual escolher pro seu próximo projeto?"
+description: "Comparação técnica e prática entre Vue 3 e React 19 para quem precisa decidir a stack do próximo produto web."
+date: "2026-02-20"
+---
+
+Essa discussão existe há anos e as respostas continuam sendo "depende". O problema é que "depende" sem critérios não ajuda ninguém a tomar uma decisão. Vou dar critérios concretos.
+
+## O que importa na escolha de framework
+
+Não é sobre qual é "melhor" em abstrato. É sobre qual serve melhor para o seu caso específico, considerando:
+
+- Complexidade do produto
+- Tamanho e senioridade do time
+- Ecossistema de bibliotecas necessário
+- Curva de aprendizado para onboarding de novos devs
+
+## Vue 3: quando faz sentido
+
+**Sistemas internos e ERPs:** A Composition API do Vue 3 é extremamente produtiva para formulários complexos, lógica de negócio densa e UIs orientadas a estado.
+
+**Times com menos experiência em React:** Vue tem curva de aprendizado mais suave. A separação clara entre template, script e estilo no SFC facilita o onboarding.
+
+**Projetos sem SSR complexo:** Vue com Vite é extremamente rápido para SPAs e aplicações internas onde SEO não é crítico.
+
+## React/Next.js: quando faz sentido
+
+**Produtos SaaS com necessidade de SEO:** Next.js 16 com App Router e Server Components é a melhor opção para aplicações que precisam de bom SEO e renderização no servidor.
+
+**Times maiores com múltiplos produtos:** O ecossistema React é maior. Mais bibliotecas, mais componentes prontos, mais devs disponíveis no mercado.
+
+**Aplicações com lógica de UI complexa:** O modelo de componentes do React com hooks é poderoso para UIs com estado complexo e muitas interações.
+
+## A resposta direta
+
+Para **SaaS com SEO, blog, landing pages e rotas públicas:** Next.js.
+
+Para **sistemas internos, ERPs, dashboards administrativos:** Vue 3.
+
+Para **APIs e back-end:** Node.js com NestJS ou Express — independente do framework de front.
+
+A melhor stack é a que o time domina e que serve o produto. Trocar de framework por modismo é mais caro do que qualquer vantagem técnica marginal que a mudança traria.

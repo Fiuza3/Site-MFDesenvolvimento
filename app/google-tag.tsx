@@ -1,0 +1,30 @@
+// TODO: Adicionar o ID da propriedade GA4 quando disponível no Google Analytics
+// Para ativar: importar <GoogleTag /> em app/layout.tsx e descomentar o código abaixo
+
+// import Script from 'next/script'
+//
+// const GA_ID = process.env.NEXT_PUBLIC_GA_ID
+//
+// export function GoogleTag() {
+//   if (!GA_ID) return null
+//   return (
+//     <>
+//       <Script
+//         src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+//         strategy="afterInteractive"
+//       />
+//       <Script id="google-analytics" strategy="afterInteractive">
+//         {`
+//           window.dataLayer = window.dataLayer || [];
+//           function gtag(){dataLayer.push(arguments);}
+//           gtag('js', new Date());
+//           gtag('config', '${GA_ID}');
+//         `}
+//       </Script>
+//     </>
+//   )
+// }
+
+export function GoogleTag() {
+  return null
+}
