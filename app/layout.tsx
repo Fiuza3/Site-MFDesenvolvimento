@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { CustomCursor } from '@/components/custom-cursor'
+import { GoogleTag } from '@/app/google-tag'
 import { SITE } from '@/lib/constants'
 import './globals.css'
 
@@ -89,7 +90,7 @@ export const metadata: Metadata = {
     apple: '/apple-icon.png',
   },
   manifest: '/manifest.webmanifest',
-  // verification: { google: 'SEU_TOKEN_AQUI' }, // TODO: adicionar após verificar no Search Console
+  verification: { google: 't4H4u4w0orn1lEK4LiAmOUkdCqaEB0IhowyWvZsQoHs' },
 }
 
 export const viewport: Viewport = {
@@ -244,6 +245,7 @@ export default function RootLayout({
         </a>
         <CustomCursor />
         {children}
+        <GoogleTag />
         {process.env.NODE_ENV === 'production' && <Analytics />}
         {process.env.NODE_ENV === 'production' && <SpeedInsights />}
       </body>
